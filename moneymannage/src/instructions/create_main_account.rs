@@ -1,8 +1,10 @@
 use anchor_lang::{
     prelude::*,
-    solana_program::pubkey::Pubkey,
-    solana_program::system_instruction,
-}; 
+    solana_program::{
+        pubkey::Pubkey,
+        system_instruction,
+    }
+};
 use crate::state::accounts::*;
 use crate::errors::ErrorCode;
 
@@ -30,10 +32,10 @@ pub fn create_main_account(
 pub struct Create<'info> {
     #[account(init, seeds = [b"Main Account"], bump, payer = user, space = MainAccount::SIZE + 8)]
     pub main_account: Account<'info, MainAccount>,
-    /// CHECK: This is not dangerous
+    /// CHECK: This is the signer
     #[account(mut, signer)]
     pub user: AccountInfo<'info>,
-    /// CHECK: This is not dangerous
+    /// CHECK: This is main_account
     #[account(mut)]
     pub main_account_info: AccountInfo<'info>,
     pub system_program: Program<'info, System>,

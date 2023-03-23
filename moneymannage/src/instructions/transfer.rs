@@ -1,7 +1,7 @@
 use anchor_lang::{
     prelude::*,
     solana_program::pubkey::Pubkey,
-}; 
+};
 use crate::state::accounts::*;
 use crate::errors::ErrorCode;
 
@@ -33,10 +33,10 @@ pub struct Transfer<'info> {
     pub main_account: Account<'info, MainAccount>,
     #[account(mut)]
     pub user: Signer<'info>,
-    /// CHECK: This is not dangerous
+    /// CHECK: This is account is the receiver
     #[account(mut)]
     pub to: AccountInfo<'info>,
-    /// CHECK: This is not dangerous
+    /// CHECK: This is the main_account
     #[account(mut)]
     pub main_account_info: AccountInfo<'info>,
     pub system_program: Program<'info, System>,
