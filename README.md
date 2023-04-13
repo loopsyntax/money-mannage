@@ -2,8 +2,8 @@
 
   ![money-mannage](money-mannage.gif)
 
-  <h1 id="title">Money mannage</h1>
-  <h4>A crypto money management program</h4>
+  <h1 id="title">💷Money mannage📊</h1>
+  <h4>A crypto money management program🛡️</h4>
 </div>
 
 ---
