@@ -16,7 +16,7 @@ In the future, blockchain software will play a fundamental role in managing larg
 
 In summary, our decentralized program offers a secure and scalable solution for managing cryptographic assets in Solana, and we believe it will be a key tool in the future of decentralized finance.
 
-<h3 align="center">Create a main account</h3>
+<h3 align="center">Create a main account📖</h3>
 
 ```rust
 pub fn create_main_account(
