@@ -76,7 +76,7 @@ After the transfer, the function updates the MainAccount account data. The bump_
 
 Finally, the function returns a Result<()> object indicating whether the account creation operation was successful or not.
 
-<h3 align="center">Add an account</h3>
+<h3 align="center">Add an account🔐</h3>
 
 ```rust
 pub fn add_account(
