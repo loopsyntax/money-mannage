@@ -157,7 +157,7 @@ In terms of functionality, the function performs the following steps:
 - Updates the total funds in main_account.
 - Returns a Result<()> object indicating whether the operation completed successfully or not.
 
-<h3 align="center">Transfer SOL to an account</h3>
+<h3 align="center">Transfer SOL to an account📮</h3>
 
 ```rust
 pub fn transfer(
