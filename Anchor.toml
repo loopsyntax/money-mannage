@@ -1,0 +1,14 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.devnet]
+sube_crypto = "2A65abYAkY9pBw6rAZyu5q4uwLdjyjd66WWwazewHPmv"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/mateo/.config/solana/id.json"
+
+[scripts]
